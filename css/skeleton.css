@@ -31,7 +31,6 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 0px;
   box-sizing: border-box; }
@@ -44,39 +43,39 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 100%;
     padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 100%;}
   .column,
   .columns {
-    margin-left: 0.5%; }
+    margin-left: 0;}
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
 
   .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
+  .one.columns                    { width: 8.33333333333%; }
+  .two.columns                    { width: 16.6666666667%; }
+  .three.columns                  { width: 25%;            }
+  .four.columns                   { width: 33.3333333333%; }
+  .five.columns                   { width: 41.6666666667%; }
+  .six.columns                    { width: 50%;            }
+  .seven.columns                  { width: 58.3333333333%; }
+  .eight.columns                  { width: 66.6666666667%; }
+  .nine.columns                   { width: 75.0%;          }
+  .ten.columns                    { width: 83.3333333333%; }
+  .eleven.columns                 { width: 91.6666666667%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
 
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
+  .one-third.column               { width: 33.3333333333%; }
+  .two-thirds.column              { width: 66.3333333333%; }
 
-  .one-half.column                { width: 49.75%; }
+  .one-half.column                { width: 50%; }
 
   /* Offsets */
   .offset-by-one.column,
@@ -119,7 +118,7 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 0px; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;

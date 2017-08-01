@@ -14,7 +14,6 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:200,400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,29 +26,47 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/custom.js"></script>
   <script>
+    thetinyplace = new Image(600,250);
+    thetinyplace.src = "images/thetinyplace-active.gif";
+
+    jeremy = new Image(600,250);
+    jeremy.src = "images/jeremy-active.gif";
+
+    glance = new Image(600,250);
+    glance.src = "images/glance-active.gif";
+
+    two = new Image(600,250);
+    two.src = "images/two-active.gif";
+
+    stacky = new Image(600,250);
+    stacky.src = "images/stacky-active.gif";
+
+    wtpf = new Image(600,250);
+    wtpf.src = "images/wtpf-active.gif";
+
+    think = new Image(600,250);
+    wtpf.src = "images/think-active.gif";
+
     chimney = new Image(600,250);
-    chimney.src = "images/chimneyIcon-active.gif";
+    chimney.src = "images/chimney-active.gif";
+
+    pogo = new Image(600,250);
+    pogo.src = "images/pogo-active.gif";
 
     disguise = new Image(600,250);
-    disguise.src = "images/disguiseIcon-active.gif";
-
-    enigma = new Image(600,250);
-    enigma.src = "images/enigmaIcon-active.gif";
-
-    heading = new Image(600,250);
-    heading.src = "images/headingIcon-active.gif";
+    disguise.src = "images/disguise-active.gif";
 
     proleague = new Image(600,250);
-    proleague.src = "images/proleagueIcon-active.gif";
+    proleague.src = "images/proleague-active.gif";
 
-    sheep = new Image(600,250);
-    sheep.src = "images/sheepIcon-active.gif";
+    heading = new Image(600,250);
+    heading.src = "images/heading-active.gif";
 
-    sorted = new Image(600,250);
-    sorted.src = "images/sortedIcon-active.gif";
+    enigma = new Image(600,250);
+    enigma.src = "images/enigma-active.gif";
 
     torsion = new Image(600,250);
-    torsion.src = "images/torsionIcon-active.gif";
+    torsion.src = "images/torsion-active.gif";
 
     hope = new Image(593,733);
     hope.src = "images/enigmaHope.gif";
@@ -66,102 +83,64 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="section hero">
-	<div class="container">
-      <div class="row">
-        <div class="one-half column leftFeatured">
-          <h4 class="hero-heading">Alistair St Pierre</h4>
-          <h4 class="hero-heading2">Interactive Experience Designer -</h4>
-          <a id="contactButton" class="button" onclick="ScrollToBottom()">Contact</a>
-        </div>
-        <div class="one-half column rightFeatured">
-			<img class="u-max-full-width" src="images/enigmaHope.gif"/>
-        </div>
+
+  <div class="container">
+    <div class="two columns" style="height:100vh;">
+      <div style="position:fixed; top:50vh; text-align:center; float:left;">
+        <img class="u-max-full-width" src="images/name-icon.png"/>
+        <img class="u-max-full-width" src="images/about-icon.png" onmouseover="this.src='images/about-active.png'" onmouseout="this.src='images/about-icon.png'"/>
+        <img class="u-max-full-width" src="images/contact-icon.png" onmouseover="this.src='images/contact-active.png'" onmouseout="this.src='images/contact-icon.png'"/>
       </div>
     </div>
-  </div>
-
-  <div class ="section currentProject">
-	   <h3 class="portfolio-heading">Latest Prototype</h3>
-  	  <div class="containerCurrentProject">
-  			<div class="row">
-          <img class="u-max-full-width" src="images/stackyBlockyIcon.png" border="0"/>
-  				</div>
-  			</div>
-	   </div>
-  </div>
-
-  <div class ="section portText">
-	   <h3 class="portfolio-heading">Portfolio</h3>
-  	  <div class="container portfolio">
-  			<div class="row">
-  				<div class="one-half column images">
-            <img class="u-max-full-width" src="images/sortedIcon.png" onmouseover="this.src='images/sortedIcon-active.gif'" onmouseout="this.src='images/sortedIcon.png'" border="0"/></a>
-  				</div>
-  				<div class="one-half column images">
-  					<img class="u-max-full-width" src="images/chimneyIcon.png" onmouseover="this.src='images/chimneyIcon-active.gif'" onmouseout="this.src='images/chimneyIcon.png'" border="0"/></a>
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="one-half column images">
-  					<a target="_blank" href="https://itunes.apple.com/nz/app/id899003698"><img class="u-max-full-width" src="images/sheepIcon.png" onmouseover="this.src='images/sheepIcon-active.gif'" onmouseout="this.src='images/sheepIcon.png'" border="0"/></a>
-  				</div>
-  				<div class="one-half column images">
-  					<a target="_blank" href="https://apps.facebook.com/playproleague/?fb_source=search&ref=ts&fref=ts"><img class="u-max-full-width" src="images/proleagueIcon.png" onmouseover="this.src='images/proleagueIcon-active.gif'" onmouseout="this.src='images/proleagueIcon.png'" border="0"/></a>
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="one-half column images">
-  				  <img class="u-max-full-width" src="images/headingIcon.png" onmouseover="this.src='images/headingIcon-active.gif'" onmouseout="this.src='images/headingIcon.png'" border="0"/>
-  				</div>
-  				<div class="one-half column images">
-  					<a target="_blank" href="https://vimeo.com/70917348"><img class="u-max-full-width" src="images/disguiseIcon.png" onmouseover="this.src='images/disguiseIcon-active.gif'" onmouseout="this.src='images/disguiseIcon.png'" border="0"/></a>
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="one-half column images">
-  					<a target="_blank" href="https://www.youtube.com/watch?v=AXzDTnXrvqs"><img class="u-max-full-width" src="images/torsionIcon.png" onmouseover="this.src='images/torsionIcon-active.gif'" onmouseout="this.src='images/torsionIcon.png'" border="0"/></a>
-  				</div>
-  				<div class="one-half column images">
-  					<a target="_blank" href="https://vimeo.com/130836282"><img class="u-max-full-width" src="images/enigmaIcon.png" onmouseover="this.src='images/enigmaIcon-active.gif'" onmouseout="this.src='images/enigmaIcon.png'" border="0"/></a>
-  				</div>
-  			</div>
-	   </div>
-  </div>
-
-  <div class="section skillset">
-    <h3 class="portfolio-heading">Skillset</h3>
-    <div class="container skillsetContainer">
-      <div class="row">
-        <div class="one-third column sheepJumpContainer">
-          <img id="sheepJump" src="images/sheepJump.gif" />
-        </div>
-        <div class="two-thirds column">
-          <ul class ="skill-content">
-            <li>Multilingual Programming</li>
-            <li>Experience and Interaction Design</li>
-            <li>Game Design and Production</li>
-            <li>3d Modelling and Animation</li>
-            <li>Video Editing and Post Production</li>
-            <li>Web Design and Development</li>
-          </ul>
-        </div>
+    <div class="ten columns">
+  		<div class="one-third column">
+  		  <img class="u-max-full-width" src="images/thetinyplace-icon.png" onmouseover="this.src='images/thetinyplace-active.gif'" onmouseout="this.src='images/thetinyplace-icon.png'"/>
+  		</div>
+  		<div class="one-third column">
+  			<img class="u-max-full-width" src="images/jeremy-icon.png" onmouseover="this.src='images/jeremy-active.gif'" onmouseout="this.src='images/jeremy-icon.png'"/>
+  		</div>
+      <div class="one-third column">
+  			<img class="u-max-full-width" src="images/glance-icon.png" onmouseover="this.src='images/glance-active.gif'" onmouseout="this.src='images/glance-icon.png'"/>
+  		</div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/two-icon.png" onmouseover="this.src='images/two-active.gif'" onmouseout="this.src='images/two-icon.png'"/>
+  		</div>
+  		<div class="one-third column">
+        <img class="u-max-full-width" src="images/stacky-icon.png" onmouseover="this.src='images/stacky-active.gif'" onmouseout="this.src='images/stacky-icon.png'"/>
+  		</div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/wtpf-icon.png" onmouseover="this.src='images/wtpf-active.gif'" onmouseout="this.src='images/wtpf-icon.png'"/>
+  		</div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/think-icon.png" onmouseover="this.src='images/think-active.gif'" onmouseout="this.src='images/think-icon.png'" border="0"/>
+  		</div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/deloitte-icon.png" onmouseover="this.src='images/deloitte-active.gif'" onmouseout="this.src='images/deloitte-icon.png'" border="0"/>
+  		</div>
+  		<div class="one-third column">
+        <img class="u-max-full-width" src="images/chimney-icon.png" onmouseover="this.src='images/chimney-active.gif'" onmouseout="this.src='images/chimney-icon.png'" border="0"/>
+  		</div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/pogo-icon.png" onmouseover="this.src='images/pogo-active.gif'" onmouseout="this.src='images/pogo-icon.png'" border="0"/>
+  		</div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/disguise-icon.png" onmouseover="this.src='images/disguise-active.gif'" onmouseout="this.src='images/disguise-icon.png'" border="0"/>
+      </div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/proleague-icon.png" onmouseover="this.src='images/proleague-active.gif'" onmouseout="this.src='images/proleague-icon.png'" border="0"/>
+      </div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/heading-icon.png" onmouseover="this.src='images/heading-active.gif'" onmouseout="this.src='images/heading-icon.png'" border="0"/>
+      </div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/enigma-icon.png" onmouseover="this.src='images/enigma-active.gif'" onmouseout="this.src='images/enigma-icon.png'" border="0"/>
+      </div>
+      <div class="one-third column">
+        <img class="u-max-full-width" src="images/torsion-icon.png" onmouseover="this.src='images/torsion-active.gif'" onmouseout="this.src='images/torsion-icon.png'" border="0"/>
       </div>
     </div>
-  </div>
+ </div>
 
-  <div class="sectionContact">
-    <h3 class="contact-heading">Contact</h3>
-    <div class="container contact">
-       <p>Twitter: @Ali_St_Pie</p>
-       <p>Email: stpierre.alistair@gmail.com </p>
-       <p>Phone: +64277266282 </p>
-    </div>
-  </div>
-
-  <div class="footer">
-
-  </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
