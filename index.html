@@ -14,17 +14,17 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,900,900i" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/component.css">
 
    <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="js/modernizr.custom.js"></script>
   <script>
     thetinyplace = new Image(600,250);
     thetinyplace.src = "images/thetinyplace-active.gif";
@@ -67,12 +67,6 @@
 
     torsion = new Image(600,250);
     torsion.src = "images/torsion-active.gif";
-
-    hope = new Image(593,733);
-    hope.src = "images/enigmaHope.gif";
-
-    jump = new Image(71,300);
-    jump.src = "images/sheepJump.gif";
   </script>
 
   <!-- Favicon
@@ -85,61 +79,210 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div class="container">
-    <div class="two columns" style="height:100vh;">
+    <div class="three columns" style="height:100vh; float:left;">
       <div style="position:fixed; top:40vh; text-align:center; width:inherit;">
         <img class="u-max-full-width" src="images/name-icon.png"/>
         <img class="u-max-full-width" src="images/about-icon.png" onmouseover="this.src='images/about-active.png'" onmouseout="this.src='images/about-icon.png'"/>
         <img class="u-max-full-width" src="images/contact-icon.png" onmouseover="this.src='images/contact-active.png'" onmouseout="this.src='images/contact-icon.png'"/>
       </div>
     </div>
-    <div class="ten columns">
-  		<div class="one-third column">
-  		  <img class="u-max-full-width" src="images/thetinyplace-icon.png" onmouseover="this.src='images/thetinyplace-active.gif'" onmouseout="this.src='images/thetinyplace-icon.png'"/>
-  		</div>
-  		<div class="one-third column">
-  			<img class="u-max-full-width" src="images/jeremy-icon.png" onmouseover="this.src='images/jeremy-active.gif'" onmouseout="this.src='images/jeremy-icon.png'"/>
-  		</div>
-      <div class="one-third column">
-  			<img class="u-max-full-width" src="images/glance-icon.png" onmouseover="this.src='images/glance-active.gif'" onmouseout="this.src='images/glance-icon.png'"/>
-  		</div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/two-icon.png" onmouseover="this.src='images/two-active.gif'" onmouseout="this.src='images/two-icon.png'"/>
-  		</div>
-  		<div class="one-third column">
-        <img class="u-max-full-width" src="images/stacky-icon.png" onmouseover="this.src='images/stacky-active.gif'" onmouseout="this.src='images/stacky-icon.png'"/>
-  		</div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/wtpf-icon.png" onmouseover="this.src='images/wtpf-active.gif'" onmouseout="this.src='images/wtpf-icon.png'"/>
-  		</div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/think-icon.png" onmouseover="this.src='images/think-active.gif'" onmouseout="this.src='images/think-icon.png'" border="0"/>
-  		</div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/deloitte-icon.png" onmouseover="this.src='images/deloitte-active.gif'" onmouseout="this.src='images/deloitte-icon.png'" border="0"/>
-  		</div>
-  		<div class="one-third column">
-        <img class="u-max-full-width" src="images/chimney-icon.png" onmouseover="this.src='images/chimney-active.gif'" onmouseout="this.src='images/chimney-icon.png'" border="0"/>
-  		</div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/pogo-icon.png" onmouseover="this.src='images/pogo-active.gif'" onmouseout="this.src='images/pogo-icon.png'" border="0"/>
-  		</div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/disguise-icon.png" onmouseover="this.src='images/disguise-active.gif'" onmouseout="this.src='images/disguise-icon.png'" border="0"/>
-      </div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/proleague-icon.png" onmouseover="this.src='images/proleague-active.gif'" onmouseout="this.src='images/proleague-icon.png'" border="0"/>
-      </div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/heading-icon.png" onmouseover="this.src='images/heading-active.gif'" onmouseout="this.src='images/heading-icon.png'" border="0"/>
-      </div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/enigma-icon.png" onmouseover="this.src='images/enigma-active.gif'" onmouseout="this.src='images/enigma-icon.png'" border="0"/>
-      </div>
-      <div class="one-third column">
-        <img class="u-max-full-width" src="images/torsion-icon.png" onmouseover="this.src='images/torsion-active.gif'" onmouseout="this.src='images/torsion-icon.png'" border="0"/>
-      </div>
+    <div class="nine columns" style="float:right; position:relative;">
+				<ul id="og-grid" class="og-grid">
+					<li class="one-third column">
+						<a data-title="The<br>Tiny<br>Place"
+              data-teamsize="Two"
+              data-duration="Ten Weeks"
+              data-learningtext="Programming-<br>Game Design-<br>Production-<br>(C# Unity)"
+              data-projectgoaltext="To experiment within the management game genre and to build a following on social media through active participation."
+              data-takeawaystext="<p style='margin-bottom:18px;'>When we began “The Tiny Place”, we had strong intentions to share our progress. The start went really well, we had a great idea of what we wanted the project to feel like and managed to produce some good pieces to showcase. However, about two months the time it was taking to produce our social media content was increasing and it was becoming more and more difficult to find things we deemed worthy to post. The creation process was slowing down as well, we were finding that the things we had planned weren’t turning out the way we had initially hoped, thus we had to make additional prototypes which, instead of being small iterations were drastic upheavals of the game mechanics.</p>
+              <p>We realised once we decided to take a break what the reason was for this. The decision to focus on creating interesting content for social media led us to plan out too many details of the games experience. Which meant when we came to creating we had tunnel vision, we had to make the game the way we had planned so that we had something interesting to share. In hindsight it was a terrible mistake, development took longer and of course, your ideas never pan out the way you think they will in the development process. So the main lessons for us were that you can’t craft an experience by solely thinking, you have to be building and if you do want to focus on social media make sure the content flows outward from your creation and doesn’t directly influence what you produce.</p>"
+              data-linktext="http://studio-rendezvous.tumblr.com/">
+              <img class="u-max-full-width" src="images/thetinyplace-icon.png" onmouseover="this.src='images/thetinyplace-active.gif'" onmouseout="this.src='images/thetinyplace-icon.png'"/>
+            </a>
+					</li>
+					<li class="one-third column">
+            <a data-title="The<br>Theory<br>Of<br>Jeremy<br>Drumm"
+              data-teamsize="Two"
+              data-duration="Two Months"
+              data-learningtext="Business Management-<br>Story Development-<br>Research-<br>Design Development-"
+              data-projectgoaltext="To craft the outline for a linear narrative game and submit a funding application for the newly established NZFC grant with the game as the product."
+              data-takeawaystext="<p style='margin-bottom:18px;'>The process of producing all of the documents necessary to submit the application for our game, The Theory Of Jeremy Drumm, turned out to be an immensely rewarding experience. Although we didn’t end up getting the funding we were happy with what we produced in such a short period of time.</p>
+              <p>Perhaps the thing that surprised us the most was the amount of support we got when we reached out for help with starting a business with the goal of getting a games grant. Having started a business previously I knew how much work it was so was incredibly grateful when we received a reply from a local accounting hero saying he would be happy to help. Under his guise, we learned how to produce a good business plan, prepare documents for grants, and how to pitch ourselves.</p>
+              <p>When we submitted the application we had decided to focus on the business side of things and ran out of time to build a prototype. This may have meant we didn't make the best case for ourselves but either way the experience was rewarding. In the future, we should be well prepared to produce business documents much faster as well as have time to focus on building a playable prototype.</p>"
+              data-linktext="https://goo.gl/QN7jkM">
+              <img class="u-max-full-width" src="images/jeremy-icon.png" onmouseover="this.src='images/jeremy-active.gif'" onmouseout="this.src='images/jeremy-icon.png'"/>
+						</a>
+					</li>
+					<li class="one-third column">
+            <a data-title="At<br>A<br>Glance"
+              data-teamsize="Two"
+              data-duration="One Weekend"
+              data-learningtext="Programming-<br>Game Design-"
+              data-projectgoaltext="To craft an experience which focuses on communication and flow/intrinsic goals."
+              data-takeawaystext="<p style='margin-bottom:18px;'>This was a much-anticipated game jam game. Ian (my partner in crime) and I had previously been working for months on research, story development, and concept art. We were itching to create something interesting and thought it would be a great opportunity to adapt our research into a game.</p>
+              <p>Because of this, our initial planning phase worked out really well. We both wrote down the aspects of the research we wanted to explore the most, then went through and picked two major ideas, which happened to be communication and flow. Coming into the game jam with the research so fresh in our minds made it incredibly easy to find an idea worth pursuing that we were both interested in.</p>
+              <p>The final prototype that we produced turned out really well. It was the first time I’ve experienced visibly seeing player’s emotions change whilst playing a game I’ve worked on. People commented that the game made them crave interaction from the NPCs. You could literally see the longing for acknowledgement in their eyes as they continued to play. Getting to this point had required a lot of user testing on our part. We took the opportunity every time we thought we had an interesting permutation to get the opinions of those around us. Even in a game jam, this kind of testing proved important.</p>"
+              data-linktext="https://globalgamejam.org/2017/games/glance">
+              <img class="u-max-full-width" src="images/glance-icon.png" onmouseover="this.src='images/glance-active.gif'" onmouseout="this.src='images/glance-icon.png'"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Two"
+              data-teamsize="Two"
+              data-duration="Three Months"
+              data-learningtext="Story Development-<br>Research-<br>Design Development-<br>Prototyping-"
+              data-projectgoaltext="Create a game which focuses on delivering a strong linear narrative and to upskill in the areas of game writing, programming, concept art, research, game design, and story development."
+              data-takeawaystext="<p style='margin-bottom:18px;'>Working at the university while the students were on holiday was amazing. Entire classrooms with windowed walls overlooking the city were completely empty, day in and day out and there were computers everywhere with fast internet. We had just finished working as tutors and needed a place to work so it was an obvious choice (even if we didn’t know if we were still allowed to be there). In that time perhaps the best resources we discovered were the lecturers who were free from classes and available to give advice and direction as well as a member of the IT staff who taught us generic programming techniques.</p>
+              <p>Probably the biggest lessons I learned were related to closely working with Ian, my long time, close designer friend, and colleague. This was a project where we really went deep, talked about ourselves, shared intimate emotions, and argued strongly over our research and design decisions. I learned to think more logically, the importance of patient, and stronger decision making, knowing that we both had the common goal of becoming better designers and thinkers.</p>
+              <p>I would say that the biggest mistake we made was probably getting caught up in the research. We were spending so much time learning about concepts and prototyping them individually instead of implementing them directly into our game. Ultimately we weren’t prepared when opportunity came knocking. NZFC had released some grants for interactive narrative based concepts. The only problem, our project was well over the scope of the application. In the end we decided to take everything that we had learned and begin on a smaller scoped project, specifically for the grant.</p>"
+              data-linktext="Not available, inquire for details.">
+              <img class="u-max-full-width" src="images/two-icon.png" onmouseover="this.src='images/two-active.gif'" onmouseout="this.src='images/two-icon.png'"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Stacky<br>Blocky"
+              data-teamsize="One"
+              data-duration="Four Months"
+              data-learningtext="Everything-<br>(Blender, Adobe, C# Unity)"
+              data-projectgoaltext="Relive childhood Tower Defence memories by crafting a game from the genre with a twist."
+              data-takeawaystext="<p style='margin-bottom:18px;'>Stacky Blocky was one of the first larger projects that I decided to go it alone. It had been a while since I had done any 3D modelling and texturing as well as game design. Concept wise I decided I wanted to build something that I felt I had a strong connection with. I was a Tower Defence fiend back in the Warcraft III days and I was very quickly dreaming up different ways to present the genre. Thus Stacky Blocky was born. I also decided to invest the time reading and watching more game design specific talks, which is when I stumbled across Vlambeer on Youtube. Their design philosophies had a huge impact on my design decision making throughout the project.</p>"
+              data-linktext="(Old Version) https://gamejolt.com/games/stacky-blocky/108178">
+              <img class="u-max-full-width" src="images/stacky-icon.png" onmouseover="this.src='images/stacky-active.gif'" onmouseout="this.src='images/stacky-icon.png'"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="William<br>Trubridge<br>Plunge<br>Freedive"
+              data-teamsize="Five"
+              data-duration="Four Months"
+              data-learningtext="Project Management-<br>Programming-<br>Animation-<br>(C# Unity)"
+              data-projectgoaltext="Build a mobile game to help raise awareness for Maui Dolphins."
+              data-takeawaystext="<p style='margin-bottom:18px;'>For some reason I can’t keep myself away from new businesses. After showing some of my projects at a games meet up to a new business owner who was looking for developers, I found myself as the lead programmer on a mobile game. The position was attractive to me because it also involved getting funding through crowd funding. I learned a lot about how to market a product during the month it took to convince people to give us their money.</p>
+              <p>The project itself required me to work with a small team as the project manager. The game itself had already been designed but all of the assets, as well as the application, needed to be managed and brought together. Unfortunately, there were a lot of delays from the designer who was meant to be extracting out the lists of production assets so I had to take over his role as well as the animators. Apart from that, the project went smoothly until the end when there was a dispute over work after the project was completed. According to the business owner, he thought I would be working on the project for after the initial application was completed. Luckily I had prepared and signed a contract at the beginning of the project to avoid this issue as I had been told it was a common one.
+</p>"
+              data-linktext="https://goo.gl/FNiZNa">
+              <img class="u-max-full-width" src="images/wtpf-icon.png" onmouseover="this.src='images/wtpf-active.gif'" onmouseout="this.src='images/wtpf-icon.png'"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Think<br>Derp"
+              data-teamsize="Three"
+              data-duration="One Weekend"
+              data-learningtext="Programming-<br>Research-<br>Game Design-<br>(C# Unity)"
+              data-projectgoaltext="Finally make a good game jam game."
+              data-takeawaystext="<p style='margin-bottom:18px;'>Previously all of my attempts at game jam games had either been over scoped, attempting something that was too technical, or not enough experience to produce something in a weekend. This game jam would be different. I was by now very experienced with Unity and C#, I had a great team, both were designers who had talent in both 3d art and music. Prior to the game jam, we made sure to work out our pipelines so that it was very quick and efficient for us to share updates.</p>
+              <p>One of our team members hadn’t had any experience in games before, he didn’t play and hadn’t designed any before. This was a little bit of a challenge as a lot of the language we use to describe games is game specific. However, it also meant that the concept phase was more diverse and interesting than usual. The process of finding our idea went very smoothly, we all put ideas into a pool and then voted on one favourite each. We then connected complementary ideas together and made sure to consider scope and technical expertise required. We also made sure to choose an idea which could start very small, be finished quickly and then improved upon throughout the jam.</p>
+              <p>After that everything went as smoothly as it could have. We produced content quickly, evaluated our prototypes as a team and decided on the next steps often. We finished with an hour to spare, the final game being quite polished and fun to play. Unfortunately, when it came to testing everyone’s games the event was poorly organised and not many people actually got to play. We also didn’t get to see what everyone else managed to produce over the weekend. But overall it went really well for us. The time we put into the process really paid off.</p>"
+              data-linktext="https://2d-sparrow.itch.io/thinkderp">
+              <img class="u-max-full-width" src="images/think-icon.png" onmouseover="this.src='images/think-active.gif'" onmouseout="this.src='images/think-icon.png'" border="0"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Deloitte<br>App"
+              data-teamsize="One"
+              data-duration="Two Months"
+              data-learningtext="Contract UI/UX Designer-<br>(Illustrator/Photoshop)"
+              data-projectgoaltext="Design the user interface and user experience for a mobile application/game and website."
+              data-takeawaystext="<p style='margin-bottom:18px;'>Coming into this project it had been a long time since I had focused on design specifically. I had done plenty of contract work previously but I was definitely rusty and getting back into shape required a lot of focus and practice. I made sure to get a solid direction out of my clients before researching examples I thought would be suitable. It was in doing this that I found this interesting quote on innovation, “If You Steal From One Author, It’s Plagiarism; If You Steal From Many, It’s Research”. It’s a practice that I had been doing since my early design days but never really thought too much about it, let alone considered it as a core process in design.</p>
+              <p>Something I have noticed when working with clients is that it is incredibly important for you to communicate the limitations of the platforms. A lot of the time a client will assume that a project will take a much shorter time than it should. As well as expect a technical aspect that isn’t achievable on one platform but very common on another.</p>"
+              data-linktext="Not available, inquire for details.">
+              <img class="u-max-full-width" src="images/deloitte-icon.png" onmouseover="this.src='images/deloitte-active.gif'" onmouseout="this.src='images/deloitte-icon.png'" border="0"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="The<br>Chimney<br>Sweep"
+              data-teamsize="Two"
+              data-duration="Four Months"
+              data-learningtext="Programming-<br>Game Design-<br>(C# Unity)"
+              data-projectgoaltext="To experiment with retention mechanics and to innovate upon platformer design."
+              data-takeawaystext="<p style='margin-bottom:18px;'>This next game helped me to learn a lot of hard lessons. It was at this point that our time in the Biz dojo's free workspace was almost over. We also didn't make any money from the smaller games and couldn’t find the means to. We would have had to crowdfund a new idea, which we didn’t have the time for. Find another investor for one of our smaller games which was very unlikely as we still didn’t have much experience. Or come up with some elaborate marketing strategy that would help to get our games an audience. We decided instead to call it quits and try to get some more experience.</p>
+              <p>However, before we ended I was working on this project with an artist I knew from University. I was under the illusion that there was no way the game wouldn’t make money and somehow managed to convince him to revenue share. In the end, the project fell apart, I had overscored and burnt myself out trying to wrangle with all of my design goals. I managed to put together a playable version with the hope that I could get some feedback and continue. But I knew that it would take me months of work, that I couldn’t afford and more work from the artist in order to get it to where I had planned. So we parted ways and I basically vowed never to never put someone in that situation again.</p>"
+              data-linktext="https://gamejolt.com/games/the-chimney-sweep/54647">
+              <img class="u-max-full-width" src="images/chimney-icon.png" onmouseover="this.src='images/chimney-active.gif'" onmouseout="this.src='images/chimney-icon.png'" border="0"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Pogo<br>Sheep"
+              data-teamsize="One"
+              data-duration="One Month"
+              data-learningtext="Everything-<br>(Maya, Flash Builder)"
+              data-projectgoaltext="To create and release my first mobile game."
+              data-takeawaystext="<p style='margin-bottom:18px;'>In wake of our last project 'Proleague', the team was now down to three and we decided we wanted to begin exploring the mobile space. The goal for each of us was to get better at developing, and game design, what better way to do it than by making as many small games as possible. We also wanted to learn as much as we could about marketing and ended up getting in contact with a woman from Pikpok who was immensely helpful. From then on it was about putting ourselves out there and sharing everything we could with people. We did a presentation at one of the very first game development meetups and straight after managed to get three months of a free workspace at the Bizdojo right in the heart of Wellington.</p>
+              <p>I decided to spend a lot of my time tweaking the game design so that the mechanics were incredibly satisfying before I began the art. I already loved animating and 3d rendering so it was an obvious choice to stick with it. When it was done I shared it with as many people as possible. We didn’t have marketing budget for the games, they were more for dipping our feet into the app stores waters. Although in hindsight we should have put more of an effort into trying to find ways to make app development sustainable.</p>"
+              data-linktext="https://goo.gl/yfFRja">
+              <img class="u-max-full-width" src="images/pogo-icon.png" onmouseover="this.src='images/pogo-active.gif'" onmouseout="this.src='images/pogo-icon.png'" border="0"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Diguise"
+              data-teamsize="Two"
+              data-duration="Two Months"
+              data-learningtext="Programming-<br>3D Art-<br>Animation-<br>(PBRT, Maya, C++, Python)"
+              data-projectgoaltext="To craft an animated scene containing both real and synthetic objects where the viewer cannot distinguish between the two."
+              data-takeawaystext="<p style='margin-bottom:18px;'>This would be my final project for the CG masters paper before I left to explore the world of games. It was definitely the most difficult project I had done to date as it involved writing complex parts for the shell program, PBRT. We used both python and C++ to implement the drawing algorithms needed to render 3d objects as well as to light them. We also exported raw data from Maya and implemented the same systems in PBRT so that we could render them in that environment.</p>
+              <p>I learned a lot about programming and rendering and was lucky to have a great peer to work with from the computer science department to help me along the way. A lot of the content was things that were out of my depth of knowledge and I had to spend many hours filling in the gaps.</p>"
+              data-linktext="https://vimeo.com/70917348">
+              <img class="u-max-full-width" src="images/disguise-icon.png" onmouseover="this.src='images/disguise-active.gif'" onmouseout="this.src='images/disguise-icon.png'" border="0"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Proleague"
+              data-teamsize="Three"
+              data-duration="A Year Or So."
+              data-learningtext="Programming-<br>3D modelling-<br>Animation-<br>Game Design-<br>(Maya, Flash Builder)"
+              data-projectgoaltext="To figure out how to get more spectators to go to stadium spots. (The Wellington Phoenix)"
+              data-takeawaystext="<p style='margin-bottom:18px;'>Three uni colleagues and I decided to start a company together. We’d spent three months around Christmas time consulting with Clemengers (through the university) on how to solve their spectator sports problem. We submitted a proposition and a prototype, they were happy, and our company got funded. The preparation work for presenting to Clemengers alone required more polish than we had ever done in a university setting, and we learned a lot about how to present ourselves along the way.</p>
+              <p>Now we had a company with an investor, this meant lots of meetings as they wanted to make sure we were learning how to run a company as well as meeting their deliverables. About six months in we began to realise we would need more capital to continue and we weren’t going to get it from the sports team. This popped our Uni bubble. We thought we were rock stars and people were going to be throwing us money left and right. To be fair we handled it pretty well. We started to find revenue from other sources, contract work and such and we split the project into four parts. We would have enough money to finish developing the first segment of the game, which was just a cool looking Facebook game with a few interesting tech twists (you could stick your face on the characters) but not much more and if interested parties wanted more they would have to pay. </p>
+              <p>It was an okay plan for us dreamers. We finished the game but quickly realised we had no money for testing or marketing our product. Our first poor attempt ended up being a posh house party (we bought fancy cider). Needless to say, we didn’t extend the reach of the game, and although it was playable and more interesting than some games you’ll play it still needed a lot of work.</p>"
+              data-linktext="https://goo.gl/uGp8Mw">
+              <img class="u-max-full-width" src="images/proleague-icon.png" onmouseover="this.src='images/proleague-active.gif'" onmouseout="this.src='images/proleague-icon.png'" border="0"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Where<br>Are<br>We<br>Heading"
+              data-teamsize="Two"
+              data-duration="Two Months"
+              data-learningtext="Concept Design-<br>Programming-<br>Video Editing-<br>Physical Computing-<br>(Processing)"
+              data-projectgoaltext="To craft an experience which reflected on non-sustainable production."
+              data-takeawaystext="<p style='margin-bottom:18px;'>This project was a weird one, but also one of my most memorable. It was for the CG Masters degree and I was paired up with Ian, another masters student. We decided we wanted to do a project which used an analogue device to interact with something digital. This was the first time I’d ever done any physical computing and we ended up pulling apart an old tape recorder and replacing it with an Arduino and components so that it could interact with a video being projected onto a wall.</p>
+              <p>When we finished the project it worked but we had no idea what we had made or how to explain it. It felt like it made sense but it was difficult to put into words why. Looking back the basic idea was you were able to choose between viewing the contents of two tapes, the past or the future. If you choose the act of looking into the future you would see images of advanced industrialisation. Looking into the future for too long would begin to erase the contents of the ‘past’ tape. The past tape contained homely images. Children riding bikes, first homes, etc. The idea being that thinking solely about the future for profit, gain, or something greedy, would erase the past for someone else. They would never have those things we take for granted when you’re greedy someone else will always lose out.</p>"
+              data-linktext="Not Available">
+              <img class="u-max-full-width" src="images/heading-icon.png" onmouseover="this.src='images/heading-active.gif'" onmouseout="this.src='images/heading-icon.png'" border="0"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Enigma"
+              data-teamsize="One"
+              data-duration="Two Months"
+              data-learningtext="Concept Design-<br>3d Modelling-<br>Texturing-<br>Animation <br>(Maya)"
+              data-projectgoaltext="To create a 3d animation which invoked a response for the audience."
+              data-takeawaystext="<p style='margin-bottom:18px;'>I remember coming to this project with a very clear idea of what I wanted to achieve. I wanted to create a piece which centred around sustainability. However, I ended up getting stuck in the concept phase for a very long time. I kept trying to find ways to tell a story abstractly and was never able to settle on an idea. They all felt too distant, not relatable enough for the audience. With the deadline approaching, I had about a week left I decided I might as well set my project around the inability to choose. Even though I was trying to move forward, I was unable to go anywhere but the feeling of moving forward was still there since I was coming up with different ideas. This is what my project became.</p>
+              <p>This project was completed during my time at University. I talked a lot with the lecturer and the tutors, and they were very aware of my struggle. I worked the hardest I had ever worked fueling my concept out of the inabilities from the weeks prior. I finished with an hour to spare, and even though it was technically only a week in production it was the best piece of work that I had presented up to that point.</p>"
+              data-linktext="https://goo.gl/p79KaC">
+              <img class="u-max-full-width" src="images/enigma-icon.png" onmouseover="this.src='images/enigma-active.gif'" onmouseout="this.src='images/enigma-icon.png'" border="0"/>
+						</a>
+					</li>
+          <li class="one-third column">
+            <a data-title="Torsion"
+              data-teamsize="Six"
+              data-duration="Two Months"
+              data-learningtext="3d Modelling-<br>Texturing-<br>(Maya)"
+              data-projectgoaltext="To create a skill based, 3d endless flyer in Unity."
+              data-takeawaystext="<p style='margin-bottom:18px;'>Torsion was a bunch of firsts for me. It was the first 3d game that I’ve been apart of and the game that introduced me to Unity. It was also the first time I’ve pitched a game in such a large and diverse group of people, and it was also the first time I would be working in such a large team with programmers. (I was doing a design degree) This meant that preparing and pitching our ideas required a lot of work and consideration to make sure it would hit the right notes for each group you wanted to target. It was important that people thought your idea was great as they would be the ones to vote and choose what games were to be worked on.</p>
+              <p>When we finally got to make the game it became very apparent that not everyone was willing to put in the same amount of effort. This was my first time really experience a different group dynamic where some were more motivated than others to put effort into the project. You learn a lot about responsibility in group projects, you always need to be well organised with clear repercussions if deadlines aren’t met. Not in a harsh penalty sort of way, more just someone else will have to pick up the slack.</p>"
+              data-linktext="https://goo.gl/drg8VG">
+              <img class="u-max-full-width" src="images/torsion-icon.png" onmouseover="this.src='images/torsion-active.gif'" onmouseout="this.src='images/torsion-icon.png'" border="0"/>
+						</a>
+					</li>
+        </ul>
     </div>
  </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/grid.js"></script>
+  <script>
+  	$(function() {
+  		Grid.init();
+  	});
+  </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
