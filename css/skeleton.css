@@ -60,13 +60,13 @@
   .one.column,
   .one.columns                    { width: 8.33333333333%; }
   .two.columns                    { width: 16.6666666667%; }
-  .three.columns                  { width: 25%;            }
+  .three.columns                  { width: 20%;            }
   .four.columns                   { width: 33.3333333333%; }
   .five.columns                   { width: 41.6666666667%; }
   .six.columns                    { width: 50%;            }
   .seven.columns                  { width: 58.3333333333%; }
   .eight.columns                  { width: 66.6666666667%; }
-  .nine.columns                   { width: 75.0%;          }
+  .nine.columns                   { width: 80.0%;          }
   .ten.columns                    { width: 83.3333333333%; }
   .eleven.columns                 { width: 91.6666666667%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
