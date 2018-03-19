@@ -348,14 +348,16 @@ var Grid = (function() {
 			this.$learningtext = $( '<p3></p3>' );
 			this.$takeawaystext = $( '<p1></p1>' );
 			this.$projectgoaltext = $( '<p2></p2>' );
+			this.$linktext = $('<p2></p2>');
 			this.$href = $( '<a href="#">Visit website</a>' );
 			this.$teamsizecontent= $('<div class="og-teamsize"><p4>Team Size: </p4></div>').append(this.$teamsize);
 			this.$durationcontent= $('<div class="og-duration"><p5>Duration: </p5></div>').append(this.$duration);
+			this.$linkcontent= $('<div class="og-link"></div>').append(this.$linktext);
 			this.$learningcontent = $('<div class="og-learning"><h2>Learning Focus:</h2></div>').append(this.$learningtext);
 			this.$goalcontent = $('<div class="og-goal"><h4>Project Goal:</h4></div>').append(this.$projectgoaltext);
 			this.$section_01 = $( '<div class="og-section_01"></div>' ).append( this.$goalcontent, this.$learningcontent);
 			this.$section_02 = $( '<div class="og-section_02"><h3>Take Aways:</h3></div>' ).append( this.$takeawaystext);
-			this.$section_03 = $( '<div class="og-section_03"></div>' ).append( this.$title, this.$teamsizecontent, this.$durationcontent );
+			this.$section_03 = $( '<div class="og-section_03"></div>' ).append( this.$title, this.$teamsizecontent, this.$durationcontent, this.$linkcontent );
 			this.$section_01_aligncontainer = $('<div class=og-aligncontainer_01></div>').append(this.$section_01);
 			this.$section_02_aligncontainer = $('<div class=og-aligncontainer_02></div>').append(this.$section_02);
 			this.$section_03_aligncontainer = $('<div class=og-aligncontainer_03></div>').append(this.$section_03);
@@ -398,6 +400,7 @@ var Grid = (function() {
 					learningtext : $itemEl.data( 'learningtext' ),
 					takeawaystext : $itemEl.data( 'takeawaystext' ),
 					projectgoaltext : $itemEl.data( 'projectgoaltext' ),
+					linktext : $itemEl.data('linktext')
 				};
 
 			this.$title.html( eldata.title );
@@ -408,6 +411,7 @@ var Grid = (function() {
 			this.$takeawaystext.html( eldata.takeawaystext );
 			this.$projectgoaltext.html( eldata.projectgoaltext );
 			this.$href.attr( 'href', eldata.href );
+			this.$linktext.html (eldata.linktext);
 		},
 		open : function() {
 
